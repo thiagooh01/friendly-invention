@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.Header{
+  grid-area: header;
+  background: #444444;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.Home{
+  grid-area: home;
+  background-color: rgb(243, 243, 243);
+    
+}
+
+/*Lateral do Chatbot*/
+.chatbot{
+  grid-area: chatbot;
+  background-color:#dfdfdf;
+  height: calc(100vh - 60px);
+ 
+}
+
+/*Rodapé*/
+.Footer{
+  grid-area: footer;
+   text-align: center;
+  background-color:#757575 ;
+  padding: 10px;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  position: absolute
+}
+
+.Conteudo{
+  display: grid;
+ grid-template-areas:
+ 'header header header header'
+ 'home home home chatbot'
+ 'footer footer footer footer';
 }

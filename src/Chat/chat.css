@@ -1,0 +1,21 @@
+
+.Chat-Conteudo{
+    display: grid;
+    padding: 10px;
+    grid-template-rows: 80px auto 80px;
+    height: calc(100vh - 60px);
+
+}
+
+.Chat-Header{
+text-align:center
+}
+
+.Chat-Conversa{
+    
+
+}
+
+.Chat-Msg{
+
+}
